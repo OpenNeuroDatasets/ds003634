@@ -15,6 +15,10 @@ V:2
 AVC:3
 AVI:4
 
+## Cognitive tests
+
+Cognitive tests results can be found here: https://osf.io/6su5g/
+
 ## MEG
 
 Three anatomical landmarks were used to define the MEG head coordinate system: Nasion, LPA, and RPA.
