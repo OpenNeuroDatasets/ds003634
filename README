@@ -1,6 +1,43 @@
-﻿References
-----------
+=========
+Dataset description: Magnetoencephalography (MEG) dataset on Finnish letter-speech sound integration.
+
+This MEG dataset was prepared in the Brain Imaging Data Structure (MEG-BIDS, Niso et al. 2018) format using MNE-BIDS (Appelhoff et al. 2019).
+
+In total 32 Finnish-speaking school children (6–11 years) participated in the study. Of those three were excluded for the following reasons: two subjects due to excessive head movements and one subject due to low head position in the MEG helmet.
+
+## EXPERIMENT
+
+The stimuli consisted of eight Finnish capital letters (A, E, I, O, U, Y, Ä, and Ö) and their corresponding speech sounds ([a], [e], [i], [o], [u], [y], [æ], and [ø]). 
+Four categories of stimuli, auditory-only (A), visual-only (V), audiovisual congruent (AVC), and audiovisual incongruent (AVI) were presented in random order with 112 trials for each type of stimuli. 
+Trigger code:
+A:1
+V:2
+AVC:3
+AVI:4
+
+## MEG
+
+Three anatomical landmarks were used to define the MEG head coordinate system: Nasion, LPA, and RPA.
+
+The position of the HPI coils and the head shape (>100 points evenly distributed over the scalp) were digitized using the Polhemus Isotrak digital tracker system (Polhemus, Colchester, VT, United States).
+
+MEG was recorded using the Elekta Neuromag TRIUX system (Elekta AB, Stockholm, Sweden) at the Centre for Interdisciplinary Brain Research, University of Jyväskylä.
+
+Data were acquired from 306 MEG channels and 2 EOG channels with a sampling rate of 1000 Hz, an online band-pass filter of 0.1-330 Hz, and a 68° upright gantry position.
+
+Maxfilter version 3.0.17 was used for movement compensation using temporal signal-space separation (tSSS).
+
+Bad MEG channels were identified manually and were interpolated by Maxfilter.
+
+## MRI
+
+Individual MRIs were defaced using ft_defacevolume implemented in the fieldtrip toolbox.
+
+## REFERENCES
+Xu, W., Kolozsvari, O. B., Monto, S. P., & Hämäläinen, J. A. (2018). Brain responses to letters and speech sounds and their correlations with cognitive skills related to reading in children. Frontiers in human neuroscience, 12, 304. https://doi.org/10.3389/fnhum.2018.00304
+
 Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Höchenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896). https://doi.org/10.21105/joss.01896
 
 Niso, G., Gorgolewski, K. J., Bock, E., Brooks, T. L., Flandin, G., Gramfort, A., Henson, R. N., Jas, M., Litvak, V., Moreau, J., Oostenveld, R., Schoffelen, J., Tadel, F., Wexler, J., Baillet, S. (2018). MEG-BIDS, the brain imaging data structure extended to magnetoencephalography. Scientific Data, 5, 180110. https://doi.org/10.1038/sdata.2018.110
 
+Oostenveld, R., Fries, P., Maris, E., Schoffelen, JM (2011). FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data. Computational Intelligence and Neuroscience, Volume 2011 (2011), Article ID 156869, doi:10.1155/2011/156869
