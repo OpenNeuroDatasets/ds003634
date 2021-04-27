@@ -1,0 +1,22 @@
+{
+    "Name": "Finnish Letter-Sound Integration MEG Dataset",
+    "BIDSVersion": "1.4.0",
+    "DatasetType": "raw",
+    "Authors": [
+        "Weiyong Xu",
+        "Orsolya Kolozsvari",
+        "Simo Monto",
+        "Robert Oostenveld",
+        "Jarmo H\u00e4m\u00e4l\u00e4inen"
+    ],
+    "Funding": [
+        "ChildBrain (Marie Curie Innovative Training Networks, no. 641652)",
+        "Predictable (Marie Curie Innovative Training Networks, no. 641858)",
+        "Academy of Finland (MultiLeTe  #292466)"
+    ],
+    "ReferencesAndLinks": [
+        "https://doi.org/10.3389/fnhum.2018.00304"
+    ],
+    "DatasetDOI": "10.18112/openneuro.ds003634.v1.0.0",
+    "License": "CC0"
+}
